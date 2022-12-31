@@ -45,12 +45,16 @@ function checkAnswer()
     startOver();
   }
 }
+//for mobile
+
+var clickfirsttime = false;
 
 function startOver(){
   level = 0;
   userClickedPattern = [];
   gamePattern = [];
   isStarted = false;
+  clickfirsttime = false;
 }
 
 //keyboard click
@@ -63,7 +67,7 @@ $(document).keydown(function(event){
 });
 
 //for mobile
-var clickfirsttime = false;
+
 $(document).click(function(){
   if(!clickfirsttime)
   {
